@@ -1,0 +1,15 @@
+title: Zhen Huang
+position: Master's Student
+description: Research on efficient large language models and AI infrastructure, including sparse attention, LLM inference acceleration, and efficient video generation.
+lang: en
+
+# 填入真实资料后，对应信息会自动出现；本地资源用站点根目录下的路径。
+affiliation: Tsinghua University
+affiliation_link: https://www.tsinghua.edu.cn/en/
+avatar: /assets/avatar.webp
+email: z-huang26@mails.tsinghua.edu.cn
+google_scholar: "https://scholar.google.com/citations?user=5gj5iBUAAAAJ&hl=zh-CN"
+github_link: https://github.com/infCraft
+cv_link:
+
+exclude: [README.md, Gemfile, Gemfile.lock, vendor]

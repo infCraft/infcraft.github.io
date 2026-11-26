@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("../fonts/crimson-pro-latin.woff2") format("woff2");
+}
+
+body {
+  background-color: #fff;
+  padding: 0;
+  font: 18px/1.5 "Crimson Pro", Georgia, serif;
+  color: #595959;
+  font-weight: 400;
+  margin: 0;
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' | escape }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description | escape }}">
+    <title>{{ site.title | escape }}{% if site.affiliation %} | {{ site.affiliation | escape }}{% endif %}</title>
+    <link rel="icon" href="{{ '/assets/book.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ '/assets/css/font.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    {% if site.data.publications.main.size > 0 %}
+    <link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}">
+    {% endif %}
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-brand">
+        <a class="site-name" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+        <img class="site-logo" src="{{ '/assets/tsinghua-logo.webp' | relative_url }}" width="450" height="154" alt="Tsinghua University">
+      </div>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="{{ '/' | relative_url }}" aria-current="page">Home</a>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <aside class="profile-sidebar" aria-label="Personal information">
+        {% if site.avatar %}
+        <img class="profile-portrait" src="{{ site.avatar | relative_url | escape }}" alt="Profile portrait" width="184" height="184">
+        {% else %}
+        <img class="book-mark" src="{{ '/assets/book.svg' | relative_url }}" width="36" height="36" alt="">
+        {% endif %}
+        <h1>{{ site.title | escape }}</h1>
+        {% if site.position %}<p class="position">{{ site.position | escape }}</p>{% endif %}
+        {% if site.affiliation %}<p>{% if site.affiliation_link %}<a href="{{ site.affiliation_link | escape }}">{{ site.affiliation | escape }}</a>{% else %}{{ site.affiliation | escape }}{% endif %}</p>{% endif %}
+        {% if site.email or site.google_scholar or site.github_link or site.cv_link %}
+        {% assign icons = '/assets/profile-icons.svg' | relative_url %}
+        <nav class="profile-links" aria-label="Contact and academic profiles">
+          {% if site.email %}<a href="mailto:{{ site.email | escape }}" aria-label="Email: {{ site.email | escape }}" title="Email: {{ site.email | escape }}"><svg aria-hidden="true"><use href="{{ icons }}#mail"/></svg></a>{% endif %}
+          {% if site.google_scholar %}<a href="{{ site.google_scholar | escape }}" aria-label="Google Scholar" title="Google Scholar"><svg aria-hidden="true"><use href="{{ icons }}#scholar"/></svg></a>{% endif %}
+          {% if site.github_link %}<a href="{{ site.github_link | escape }}" aria-label="GitHub" title="GitHub"><svg aria-hidden="true"><use href="{{ icons }}#github"/></svg></a>{% endif %}
+          {% if site.cv_link %}<a href="{{ site.cv_link | relative_url | escape }}" aria-label="Curriculum vitae" title="Curriculum vitae"><svg aria-hidden="true"><use href="{{ icons }}#cv"/></svg></a>{% endif %}
+        </nav>
+        {% endif %}
+      </aside>
+      <section role="main" aria-label="Academic profile">
+        {{ content }}
+      </section>
+    </div>
+  </body>
+</html>

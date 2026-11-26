@@ -1,0 +1,15 @@
+main:
+  - title: "Every Query Routes Itself: Accelerating Video Diffusion Transformers with Per-Query Routed Sparse Attention"
+    authors: "<strong>Zhen Huang*</strong>, Shuwei Li*, Ruizhe Yao, Xinrui Chen, Danyi Liu, Haoyuan Liang, Zhiyu Ye, Qiuyan Sun, Bingwei Chen, Yiyuan Li, Xu Zhou, Haohuan Fu"
+    conference: "arXiv:2611.24479, 2026"
+    conference_short: "arXiv"
+    arxiv: "https://arxiv.org/abs/2611.24479"
+    pdf: "https://arxiv.org/pdf/2611.24479"
+
+  - title: "CompKV: Compensation-Aware KV Selection for Long-Context LLM Inference"
+    authors: "<strong>Zhen Huang*</strong>, Ruizhe Yao*, Danyi Liu*, Xinrui Chen, Shuwei Li, Siru Zhong, Zijian Cao, Yushan Lai, Mingming Guo, Weijie Zheng, Haohuan Fu"
+    conference: "arXiv:2609.26300, 2026"
+    conference_short: "arXiv"
+    arxiv: "https://arxiv.org/abs/2609.26300"
+    pdf: "https://arxiv.org/pdf/2609.26300"
+  
