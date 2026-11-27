@@ -12,4 +12,16 @@ main:
     conference_short: "arXiv"
     arxiv: "https://arxiv.org/abs/2609.26300"
     pdf: "https://arxiv.org/pdf/2609.26300"
-  
+    
+  - title: "LRQ-Cache: Compressing Feature Caches in Video Diffusion via Low-Rank Approximation and Quantization"
+    authors: "Ruizhe Yao*, <strong>Zhen Huang*</strong>, Songpan Gao, Danyi Liu, Zijian Cao, Weijie Zheng, Haohuan Fu"
+    conference: "arXiv:2611.32345, 2026"
+    conference_short: "arXiv"
+    arxiv: "https://arxiv.org/abs/2611.32345"
+    pdf: "https://arxiv.org/pdf/2611.32345"
+    
+  - title: "SearchV: Evolutionary Fine-Grained Visual-Token Skipping for Efficient Vision-Language Models"
+    authors: "Xinrui Chen, <strong>Zhen Huang</strong>, Shuwei Li, Fanyi Zeng, Dongxu Yue, Hao Yu, Huaisong Zhang, Xitong Ling, Yongxian Wei, Feng Lu, Chun Yuan"
+    conference: "NeurIPS 2026"
+    conference_short: "NeurIPS"
+    url: "https://neurips.cc/virtual/2026/loc/sydney/poster/150488"

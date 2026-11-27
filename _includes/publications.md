@@ -15,7 +15,7 @@
   </div>
   {% endif %}
   <div{% if link.image %} class="col-sm-9"{% endif %}>
-    {% assign title_url = link.arxiv | default: link.pdf %}
+    {% assign title_url = link.url | default: link.arxiv | default: link.pdf %}
     <div class="title">{% if title_url %}<a href="{{ title_url }}">{{ link.title }}</a>{% else %}{{ link.title }}{% endif %}</div>
     <div class="author">{{ link.authors }}</div>
     <div class="periodical"><em>{{ link.conference | default: link.conference_short }}</em></div>
