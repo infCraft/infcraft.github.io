@@ -18,7 +18,7 @@
     {% assign title_url = link.url | default: link.arxiv | default: link.pdf %}
     <div class="title">{% if title_url %}<a href="{{ title_url }}">{{ link.title }}</a>{% else %}{{ link.title }}{% endif %}</div>
     <div class="author">{{ link.authors }}</div>
-    <div class="periodical"><em>{{ link.conference | default: link.conference_short }}</em></div>
+    <div class="periodical{% if link.accepted %} accepted{% endif %}"><em>{{ link.conference | default: link.conference_short }}</em></div>
     <div class="links">
       {% if link.pdf %}
       <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener">PDF</a>

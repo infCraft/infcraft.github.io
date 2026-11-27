@@ -141,6 +141,14 @@ blockquote {
         }
       }
 
+      .periodical.accepted {
+        color: #b4232c;
+
+        @include dark {
+          color: #ff8a91;
+        }
+      }
+
       .links {
         a.btn {
           color: #000000;

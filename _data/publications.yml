@@ -24,4 +24,6 @@ main:
     authors: "Xinrui Chen, <strong>Zhen Huang</strong>, Shuwei Li, Fanyi Zeng, Dongxu Yue, Hao Yu, Huaisong Zhang, Xitong Ling, Yongxian Wei, Feng Lu, Chun Yuan"
     conference: "NeurIPS 2026"
     conference_short: "NeurIPS"
+    accepted: true
     url: "https://neurips.cc/virtual/2026/loc/sydney/poster/150488"
+    pdf: "https://openreview.net/pdf?id=hiy8FQrDmX"
